@@ -12,6 +12,8 @@
 
 namespace cms_music\models;
 
+use lithium\g11n\Message;
+
 class RecordLabels extends \base_core\models\Base {
 
 	use \base_core\models\SlugTrait;

@@ -12,7 +12,7 @@
 
 namespace cms_music\controllers;
 
-class MusciansController extends \base_core\controllers\BaseController {
+class MusiciansController extends \base_core\controllers\BaseController {
 
 	use \base_core\controllers\AdminIndexTrait;
 	use \base_core\controllers\AdminAddTrait;

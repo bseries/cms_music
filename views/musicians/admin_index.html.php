@@ -53,7 +53,7 @@ $this->set([
 					<td class="flag is-published"><?= ($item->is_published ? '✓' : '×') ?>
 
 					<td class="media">
-						<?php if ($cover = $item->cover()): ?>
+						<?php if ($cover = $item->logo()): ?>
 							<?= $this->media->image($cover->version('fix3admin'), [
 								'data-media-id' => $cover->id, 'alt' => 'preview'
 							]) ?>

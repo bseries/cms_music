@@ -18,12 +18,17 @@ extract(Message::aliases());
 Panes::register('authoring.musicians', [
 	'title' => $t('Musicians', ['scope' => 'cms_music']),
 	'url' => ['controller' => 'musicians', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
-	'weight' => 40
+	'weight' => 22
 ]);
-Panes::register('authoring.musicArtists', [
+Panes::register('authoring.musicLabels', [
+	'title' => $t('Music Labels', ['scope' => 'cms_music']),
+	'url' => ['controller' => 'MusicLabels', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
+	'weight' => 23
+]);
+Panes::register('authoring.records', [
 	'title' => $t('Records', ['scope' => 'cms_music']),
 	'url' => ['controller' => 'records', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
-	'weight' => 40
+	'weight' => 20
 ]);
 
 ?>

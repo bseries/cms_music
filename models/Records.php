@@ -12,6 +12,8 @@
 
 namespace cms_music\models;
 
+use lithium\g11n\Message;
+
 // Fields roughly follow:
 // http://help.mp3tag.de/main_tags.html
 class Records extends \base_core\models\Base {
