@@ -44,6 +44,7 @@ CREATE TABLE `records` (
   `cover_media_id` int(11) DEFAULT NULL,
   `title` varchar(250) NOT NULL DEFAULT '',
   `description` text NOT NULL,
+  `tracklist` text,
   `is_published` tinyint(1) DEFAULT '0',
   `formats` varchar(250) DEFAULT NULL,
   `year` year(4) NOT NULL,
