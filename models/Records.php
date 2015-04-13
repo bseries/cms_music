@@ -12,6 +12,8 @@
 
 namespace cms_music\models;
 
+// Fields roughly follow:
+// http://help.mp3tag.de/main_tags.html
 class Records extends \base_core\models\Base {
 
 	use \base_core\models\SlugTrait;
@@ -48,10 +50,17 @@ class Records extends \base_core\models\Base {
 				]
 			]
 		],
+		'base_core\extensions\data\behavior\Serializable' => [
+			'fields' => [
+				'formats' => ','
+			]
+		],
 		'base_core\extensions\data\behavior\Timestamp',
 		'base_core\extensions\data\behavior\Searchable' => [
 			'fields' => [
-				'title'
+				'title',
+				'formats',
+				'year'
 			]
 		]
 	];
