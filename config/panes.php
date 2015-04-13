@@ -20,9 +20,9 @@ Panes::register('authoring.musicians', [
 	'url' => ['controller' => 'musicians', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
 	'weight' => 22
 ]);
-Panes::register('authoring.musicLabels', [
-	'title' => $t('Music Labels', ['scope' => 'cms_music']),
-	'url' => ['controller' => 'MusicLabels', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
+Panes::register('authoring.recordLabels', [
+	'title' => $t('Record Labels', ['scope' => 'cms_music']),
+	'url' => ['controller' => 'RecordLabels', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
 	'weight' => 23
 ]);
 Panes::register('authoring.records', [

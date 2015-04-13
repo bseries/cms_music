@@ -34,7 +34,7 @@ $this->set([
 				]) ?>
 				<?= $this->form->field('formats', [
 					'type' => 'text',
-					'label' => $t('Formats/s'),
+					'label' => $t('Format/s'),
 					'value' => $item->formats(['serialized' => true]) ?: 'CD'
 				]) ?>
 				<div class="help"><?= $t('Separate multiple formats with commas.') ?></div>
