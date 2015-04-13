@@ -94,6 +94,15 @@ $this->set([
 			</div>
 		</div>
 
+		<div class="grid-row">
+			<?= $this->form->field('tracklist', [
+				'type' => 'textarea',
+				'label' => $t('Tracklist'),
+				'wrap' => ['class' => 'use-editor editor-basic editor-list editor-size--beta'],
+			]) ?>
+		</div>
+
+
 		<div class="bottom-actions">
 			<?php if ($item->exists()): ?>
 				<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_music'], ['class' => 'button large']) ?>
