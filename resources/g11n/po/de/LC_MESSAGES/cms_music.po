@@ -1,0 +1,168 @@
+# German translations for cms_music package.
+# Copyright (C) 2015 Atelier Disko
+# This file is distributed under the same license as the cms_music package.
+# Automatically generated, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cms_music 1.0\n"
+"Report-Msgid-Bugs-To: info@atelierdisko.de\n"
+"POT-Creation-Date: 2015-04-13 13:31+0200\n"
+"PO-Revision-Date: 2015-04-13 13:31+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config/panes.php:19
+msgid "Musicians"
+msgstr ""
+
+#: config/panes.php:24 config/widgets.php:22
+msgid "Records"
+msgstr ""
+
+#: models/Musicians.php:60 models/Records.php:61
+msgid "This field cannot be left blank."
+msgstr ""
+
+#: views/posts/admin_form.html.php:15
+msgid "untitled"
+msgstr ""
+
+#: views/posts/admin_form.html.php:16
+msgid "post"
+msgstr ""
+
+#: views/posts/admin_form.html.php:19
+msgid "published"
+msgstr ""
+
+#: views/posts/admin_form.html.php:19
+msgid "unpublished"
+msgstr ""
+
+#: views/posts/admin_form.html.php:20
+msgid "promoted"
+msgstr ""
+
+#: views/posts/admin_form.html.php:20
+msgid "unpromoted"
+msgstr ""
+
+#: views/posts/admin_form.html.php:31 views/posts/admin_index.html.php:42
+msgid "Title"
+msgstr ""
+
+#: views/posts/admin_form.html.php:34
+msgid "Author/s"
+msgstr ""
+
+#: views/posts/admin_form.html.php:37
+msgid "Separate multiple authors with commas."
+msgstr ""
+
+#: views/posts/admin_form.html.php:42
+msgid "Publish date"
+msgstr ""
+
+#: views/posts/admin_form.html.php:45
+msgid ""
+"Setting a publish date allows to pre- or post-date this item. It is used for "
+"public display."
+msgstr ""
+
+#: views/posts/admin_form.html.php:47
+msgid "Tags"
+msgstr ""
+
+#: views/posts/admin_form.html.php:48
+msgid "Separate multiple tags with commas."
+msgstr ""
+
+#: views/posts/admin_form.html.php:52
+msgid "Source"
+msgstr ""
+
+#: views/posts/admin_form.html.php:59
+msgid "Cover"
+msgstr ""
+
+#: views/posts/admin_form.html.php:62 views/posts/admin_form.html.php:73
+msgid "select"
+msgstr ""
+
+#: views/posts/admin_form.html.php:67
+msgid "Media"
+msgstr ""
+
+#: views/posts/admin_form.html.php:82
+msgid "Teaser"
+msgstr ""
+
+#: views/posts/admin_form.html.php:94
+msgid "Content"
+msgstr ""
+
+#: views/posts/admin_form.html.php:101 views/posts/admin_index.html.php:81
+msgid "promote"
+msgstr ""
+
+#: views/posts/admin_form.html.php:101 views/posts/admin_index.html.php:81
+msgid "unpromote"
+msgstr ""
+
+#: views/posts/admin_form.html.php:104 views/posts/admin_index.html.php:83
+msgid "publish"
+msgstr ""
+
+#: views/posts/admin_form.html.php:104 views/posts/admin_index.html.php:83
+msgid "unpublish"
+msgstr ""
+
+#: views/posts/admin_form.html.php:106
+msgid "save"
+msgstr ""
+
+#: views/posts/admin_index.html.php:13
+msgid "posts"
+msgstr ""
+
+#: views/posts/admin_index.html.php:30
+msgid "new post"
+msgstr ""
+
+#: views/posts/admin_index.html.php:37
+msgid "publ.?"
+msgstr ""
+
+#: views/posts/admin_index.html.php:39
+msgid "prom.?"
+msgstr ""
+
+#: views/posts/admin_index.html.php:43
+msgid "Pubdate"
+msgstr ""
+
+#: views/posts/admin_index.html.php:44
+msgid "Modified"
+msgstr ""
+
+#: views/posts/admin_index.html.php:49
+msgid "Filter"
+msgstr ""
+
+#: views/posts/admin_index.html.php:79
+msgid "delete"
+msgstr ""
+
+#: views/posts/admin_index.html.php:84
+msgid "open"
+msgstr ""
+
+#: views/posts/admin_index.html.php:89
+msgid "No items available, yet."
+msgstr ""
