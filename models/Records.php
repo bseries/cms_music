@@ -13,6 +13,7 @@
 namespace cms_music\models;
 
 use lithium\g11n\Message;
+use cms_music\models\RecordLabelsRecords;
 
 // Fields roughly follow:
 // http://help.mp3tag.de/main_tags.html
@@ -82,5 +83,41 @@ class Records extends \base_core\models\Base {
 }
 
 Records::init();
+
+Records::applyFilter('save', function($self, $params, $chain) {
+	$labels = [];
+
+	if (isset($params['data']['record_labels'])) {
+		$labels = $params['data']['record_labels'];
+		unset($params['data']['record_labels']);
+	}
+
+	if (!$result = $chain->next($self, $params, $chain)) {
+		return false;
+	}
+
+	if ($labels) {
+		if ($params['entity']->exists()) {
+			RecordLabelsRecords::remove([
+				'record_id' => $params['entity']->id
+			]);
+		}
+		foreach ($labels as $id) {
+			RecordLabelsRecords::create([
+				'record_id' => $params['entity']->id,
+				'record_label_id' => $id
+			])->save();
+		}
+	}
+
+	return $result;
+});
+
+Records::applyFilter('delete', function($self, $params, $chain) {
+	RecordLabelsRecords::remove([
+		'record_id' => $params['entity']->id
+	]);
+	return $chain->next($self, $params, $chain);
+});
 
 ?>

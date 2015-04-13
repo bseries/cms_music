@@ -12,6 +12,8 @@
 
 namespace cms_music\controllers;
 
+use cms_music\models\RecordLabels;
+
 class RecordsController extends \base_core\controllers\BaseController {
 
 	use \base_core\controllers\AdminIndexTrait;
@@ -20,6 +22,11 @@ class RecordsController extends \base_core\controllers\BaseController {
 	use \base_core\controllers\AdminDeleteTrait;
 
 	use \base_core\controllers\AdminPublishTrait;
+
+	protected function _selects($item = null) {
+		$recordLabels = RecordLabels::find('list');
+		return compact('recordLabels');
+	}
 }
 
 ?>

@@ -27,6 +27,12 @@ $this->set([
 				<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title'), 'class' => 'use-for-title']) ?>
 			</div>
 			<div class="grid-column-right">
+			</div>
+		</div>
+		<div class="grid-row">
+			<div class="grid-column-left">
+			</div>
+			<div class="grid-column-right">
 				<?= $this->form->field('year', [
 					'type' => 'text',
 					'label' => $t('Year'),
@@ -38,12 +44,19 @@ $this->set([
 					'value' => $item->formats(['serialized' => true]) ?: 'CD'
 				]) ?>
 				<div class="help"><?= $t('Separate multiple formats with commas.') ?></div>
-			</div>
-		</div>
-		<div class="grid-row">
-			<div class="grid-column-left">
-			</div>
-			<div class="grid-column-right">
+				<?php
+				$recordLabelValue = [];
+				foreach ($item->recordLabels() as $label) {
+					$recordLabelsValue[] = $label->record_label_id;
+				}
+				?>
+				<?= $this->form->field('record_labels', [
+					'type' => 'select',
+					'multiple' => true,
+					'label' => $t('Labels'),
+					'value' => $recordLabelsValue,
+					'list' => $recordLabels
+				]) ?>
 			</div>
 		</div>
 		<div class="grid-row">
