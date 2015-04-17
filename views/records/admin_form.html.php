@@ -50,7 +50,7 @@ $this->set([
 				]) ?>
 				<div class="help"><?= $t('Separate multiple formats with commas.') ?></div>
 				<?php
-				$recordLabelValue = [];
+				$recordLabelsValue = [];
 				foreach ($item->recordLabels() as $label) {
 					$recordLabelsValue[] = $label->record_label_id;
 				}
