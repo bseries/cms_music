@@ -24,6 +24,11 @@ $this->set([
 	<?=$this->form->create($item) ?>
 		<div class="grid-row">
 			<div class="grid-column-left">
+				<?= $this->form->field('musician_id', [
+					'type' => 'select',
+					'label' => $t('Musician'),
+					'list' => $musicians
+				]) ?>
 				<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title'), 'class' => 'use-for-title']) ?>
 			</div>
 			<div class="grid-column-right">

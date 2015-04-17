@@ -12,6 +12,7 @@
 
 namespace cms_music\controllers;
 
+use cms_music\models\Musicians;
 use cms_music\models\RecordLabels;
 
 class RecordsController extends \base_core\controllers\BaseController {
@@ -24,8 +25,9 @@ class RecordsController extends \base_core\controllers\BaseController {
 	use \base_core\controllers\AdminPublishTrait;
 
 	protected function _selects($item = null) {
+		$musicians = Musicians::find('list');
 		$recordLabels = RecordLabels::find('list');
-		return compact('recordLabels');
+		return compact('musicians', 'recordLabels');
 	}
 }
 

@@ -36,6 +36,7 @@ $this->set([
 				<tr>
 					<td data-sort="is-published" class="flag is-published table-sort"><?= $t('publ.?') ?>
 					<td class="media">
+					<td data-sort="musician.name" class="table-sort"><?= $t('Musician') ?>
 					<td data-sort="title" class="emphasize title table-sort"><?= $t('Title') ?>
 					<td data-sort="year" class="date table-sort"><?= $t('Year') ?>
 					<td data-sort="modified" class="date modified table-sort desc"><?= $t('Modified') ?>
@@ -59,6 +60,7 @@ $this->set([
 								'data-media-id' => $cover->id, 'alt' => 'preview'
 							]) ?>
 						<?php endif ?>
+					<td><?= $item->musician()->name ?>
 					<td class="emphasize title"><?= $item->title ?>
 					<td class="date">
 						<?= $item->year ?>
