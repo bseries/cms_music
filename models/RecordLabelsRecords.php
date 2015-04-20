@@ -24,6 +24,10 @@ class RecordLabelsRecords extends \base_core\models\Base {
 			'key' => 'record_id'
 		]
 	];
+
+	protected static $_actsAs = [
+		'base_core\extensions\data\behavior\RelationsPlus'
+	];
 }
 
 ?>
