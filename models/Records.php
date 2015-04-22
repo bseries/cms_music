@@ -63,7 +63,7 @@ class Records extends \base_core\models\Base {
 			'fields' => [
 				'title',
 				'formats',
-				'year'
+				'published'
 			]
 		]
 	];

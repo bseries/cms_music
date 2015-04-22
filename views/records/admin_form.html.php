@@ -38,10 +38,10 @@ $this->set([
 			<div class="grid-column-left">
 			</div>
 			<div class="grid-column-right">
-				<?= $this->form->field('year', [
-					'type' => 'text',
-					'label' => $t('Year'),
-					'value' => $item->year ?: date('Y')
+				<?= $this->form->field('published', [
+					'type' => 'date',
+					'label' => $t('Publish date'),
+					'value' => $item->published ?: date('Y-m-d')
 				]) ?>
 				<?= $this->form->field('formats', [
 					'type' => 'text',

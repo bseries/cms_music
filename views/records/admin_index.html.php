@@ -38,7 +38,7 @@ $this->set([
 					<td class="media">
 					<td data-sort="musician.name" class="table-sort"><?= $t('Musician') ?>
 					<td data-sort="title" class="emphasize title table-sort"><?= $t('Title') ?>
-					<td data-sort="year" class="date table-sort"><?= $t('Year') ?>
+					<td data-sort="published" class="date published table-sort"><?= $t('Pubdate') ?>
 					<td data-sort="modified" class="date modified table-sort desc"><?= $t('Modified') ?>
 					<td class="actions">
 						<?= $this->form->field('search', [
@@ -62,8 +62,10 @@ $this->set([
 						<?php endif ?>
 					<td><?= $item->musician()->name ?>
 					<td class="emphasize title"><?= $item->title ?>
-					<td class="date">
-						<?= $item->year ?>
+					<td class="date published">
+						<time datetime="<?= $this->date->format($item->published, 'w3c') ?>">
+							<?= $this->date->format($item->published, 'date') ?>
+						</time>
 					<td class="date modified">
 						<time datetime="<?= $this->date->format($item->modified, 'w3c') ?>">
 							<?= $this->date->format($item->modified, 'date') ?>
