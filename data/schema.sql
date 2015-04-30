@@ -47,9 +47,11 @@ CREATE TABLE `records` (
   `tracklist` text,
   `is_published` tinyint(1) DEFAULT '0',
   `formats` varchar(250) DEFAULT NULL,
-  `year` year(4) NOT NULL,
+  `published` date NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `is_published` (`is_published`)
+  KEY `is_published` (`is_published`),
+  KEY `musician_id` (`musician_id`),
+  KEY `published` (`published`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
