@@ -49,15 +49,13 @@ $this->set([
 
 		<div class="grid-row">
 			<div class="grid-column-left">
-				<?= $this->form->field('description', [
-					'type' => 'textarea',
+				<?= $this->editor->field('description', [
 					'label' => $t('Description'),
-					'wrap' => ['class' => 'use-editor editor-basic editor-link editor-size--gamma'],
+					'size' => 'gamma',
+					'features' => 'minimal'
 				]) ?>
 			</div>
-			<div class="grid-column-right">
-
-			</div>
+			<div class="grid-column-right"></div>
 		</div>
 
 		<div class="bottom-actions">

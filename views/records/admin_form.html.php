@@ -88,25 +88,22 @@ $this->set([
 
 		<div class="grid-row">
 			<div class="grid-column-left">
-				<?= $this->form->field('description', [
-					'type' => 'textarea',
+				<?= $this->editor->field('description', [
 					'label' => $t('Description'),
-					'wrap' => ['class' => 'use-editor editor-basic editor-link editor-size--gamma'],
+					'size' => 'gamma',
+					'features' => 'minimal'
 				]) ?>
 			</div>
-			<div class="grid-column-right">
-
-			</div>
+			<div class="grid-column-right"></div>
 		</div>
 
 		<div class="grid-row">
-			<?= $this->form->field('tracklist', [
-				'type' => 'textarea',
+			<?= $this->editor->field('tracklist', [
 				'label' => $t('Tracklist'),
-				'wrap' => ['class' => 'use-editor editor-basic editor-list editor-size--beta'],
+				'size' => 'beta',
+				'features' => ['basic', 'list']
 			]) ?>
 		</div>
-
 
 		<div class="bottom-actions">
 			<?php if ($item->exists()): ?>
