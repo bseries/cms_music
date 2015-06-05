@@ -36,15 +36,13 @@ $this->set([
 		</div>
 		<div class="grid-row">
 			<div class="grid-column-left">
-				<div class="media-attachment use-media-attachment-direct">
-					<?= $this->form->label('MusicianLogoMediaId', $t('Logo')) ?>
-					<?= $this->form->hidden('logo_media_id') ?>
-					<div class="selected"></div>
-					<?= $this->html->link($t('select'), '#', ['class' => 'button select']) ?>
-				</div>
+				<?= $this->media->field('logo_media_id', [
+					'label' => $t('Logo'),
+					'attachment' => 'direct',
+					'value' => $item->logo()
+				]) ?>
 			</div>
-			<div class="grid-column-right">
-			</div>
+			<div class="grid-column-right"></div>
 		</div>
 
 		<div class="grid-row">

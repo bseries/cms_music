@@ -66,23 +66,18 @@ $this->set([
 		</div>
 		<div class="grid-row">
 			<div class="grid-column-left">
-				<div class="media-attachment use-media-attachment-direct">
-					<?= $this->form->label('RecordsCoverMediaId', $t('Cover')) ?>
-					<?= $this->form->hidden('cover_media_id') ?>
-					<div class="selected"></div>
-					<?= $this->html->link($t('select'), '#', ['class' => 'button select']) ?>
-				</div>
+				<?= $this->media->field('cover_media_id', [
+					'label' => $t('Cover'),
+					'attachment' => 'direct',
+					'value' => $item->cover()
+				]) ?>
 			</div>
 			<div class="grid-column-right">
-				<div class="media-attachment use-media-attachment-joined">
-					<?= $this->form->label('RecordsMedia', $t('Media')) ?>
-					<?php foreach ($item->media() as $media): ?>
-						<?= $this->form->hidden('media.' . $media->id . '.id', ['value' => $media->id]) ?>
-					<?php endforeach ?>
-
-					<div class="selected"></div>
-					<?= $this->html->link($t('select'), '#', ['class' => 'button select']) ?>
-				</div>
+				<?= $this->media->field('media', [
+					'label' => $t('Media'),
+					'attachment' => 'joined',
+					'value' => $item->media()
+				]) ?>
 			</div>
 		</div>
 
