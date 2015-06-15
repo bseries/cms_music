@@ -19,8 +19,6 @@ use cms_music\models\RecordLabelsRecords;
 // http://help.mp3tag.de/main_tags.html
 class Records extends \base_core\models\Base {
 
-	use \base_core\models\SlugTrait;
-
 	public $belongsTo = [
 		'CoverMedia' => [
 			'to' => 'base_media\models\Media',
@@ -40,6 +38,7 @@ class Records extends \base_core\models\Base {
 	];
 
 	protected static $_actsAs = [
+		'base_core\extensions\data\behavior\Sluggable',
 		'base_core\extensions\data\behavior\RelationsPlus',
 		'base_media\extensions\data\behavior\Coupler' => [
 			'bindings' => [

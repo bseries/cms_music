@@ -16,8 +16,6 @@ use lithium\g11n\Message;
 
 class RecordLabels extends \base_core\models\Base {
 
-	use \base_core\models\SlugTrait;
-
 	public $belongsTo = [
 		'CoverMedia' => [
 			'to' => 'base_media\models\Media',
@@ -37,6 +35,7 @@ class RecordLabels extends \base_core\models\Base {
 	];
 
 	protected static $_actsAs = [
+		'base_core\extensions\data\behavior\Sluggable',
 		'base_core\extensions\data\behavior\RelationsPlus',
 		'base_media\extensions\data\behavior\Coupler' => [
 			'bindings' => [
