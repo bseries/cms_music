@@ -27,7 +27,7 @@ $this->set([
 >
 
 	<div class="top-actions">
-		<?= $this->html->link($t('new record'), ['action' => 'add'], ['class' => 'button add']) ?>
+		<?= $this->html->link($t('record'), ['action' => 'add'], ['class' => 'button add']) ?>
 	</div>
 
 	<?php if ($data->count()): ?>
