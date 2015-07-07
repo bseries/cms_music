@@ -10,6 +10,8 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
+namespace cms_music\config;
+
 use base_tag\models\Tags;
 
 Tags::registerDependent('cms_music\models\Posts');
