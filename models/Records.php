@@ -37,7 +37,7 @@ class Records extends \base_core\models\Base {
 		]
 	];
 
-	protected static $_actsAs = [
+	public $actsAs = [
 		'base_core\extensions\data\behavior\Sluggable',
 		'base_core\extensions\data\behavior\RelationsPlus',
 		'base_media\extensions\data\behavior\Coupler' => [
