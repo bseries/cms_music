@@ -25,7 +25,7 @@ class RecordLabelsRecords extends \base_core\models\Base {
 		]
 	];
 
-	public $actsAs = [
+	protected $_actsAs = [
 		'base_core\extensions\data\behavior\RelationsPlus'
 	];
 }
