@@ -22,17 +22,17 @@ use lithium\g11n\Message;
 
 extract(Message::aliases());
 
-Panes::register('authoring.musicians', [
+Panes::register('cms.musicians', [
 	'title' => $t('Musicians', ['scope' => 'cms_music']),
 	'url' => ['controller' => 'musicians', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
 	'weight' => 22
 ]);
-Panes::register('authoring.recordLabels', [
+Panes::register('cms.recordLabels', [
 	'title' => $t('Record Labels', ['scope' => 'cms_music']),
 	'url' => ['controller' => 'RecordLabels', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
 	'weight' => 23
 ]);
-Panes::register('authoring.records', [
+Panes::register('cms.records', [
 	'title' => $t('Records', ['scope' => 'cms_music']),
 	'url' => ['controller' => 'records', 'action' => 'index', 'library' => 'cms_music', 'admin' => true],
 	'weight' => 20
