@@ -66,7 +66,7 @@ class RecordLabels extends \base_core\models\Base {
 			[
 				'notEmpty',
 				'on' => ['create', 'update'],
-				'message' => $t('This field cannot be left blank.', ['scope' => 'cms_music'])
+				'message' => $t('This field cannot be empty.', ['scope' => 'cms_music'])
 			]
 		];
 	}
