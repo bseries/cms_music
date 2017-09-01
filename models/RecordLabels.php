@@ -44,9 +44,17 @@ class RecordLabels extends \base_core\models\Base {
 		'base_core\extensions\data\behavior\RelationsPlus',
 		'base_media\extensions\data\behavior\Coupler' => [
 			'bindings' => [
-				'logo' => [
+				'cover' => [
 					'type' => 'direct',
-					'to' => 'logo_media_id'
+					'to' => 'cover_media_id'
+				],
+				'media' => [
+					'type' => 'joined',
+					'to' => 'base_media\models\MediaAttachments'
+				],
+				'bodyMedia' => [
+					'type' => 'inline',
+					'to' => 'body'
 				]
 			]
 		],
