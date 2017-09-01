@@ -27,33 +27,41 @@ $this->set([
 				<?= $this->form->field('name', ['type' => 'text', 'label' => $t('Name'), 'class' => 'use-for-title']) ?>
 			</div>
 			<div class="grid-column-right">
-				<?= $this->form->field('url', [
-					'type' => 'text',
-					'label' => $t('Link'),
-					'placeholder' => $t('https://foo.com/bar or /bar')]
-				) ?>
-			</div>
-		</div>
-		<div class="grid-row">
-			<div class="grid-column-left">
-				<?= $this->media->field('logo_media_id', [
-					'label' => $t('Logo'),
-					'attachment' => 'direct',
-					'value' => $item->logo()
+				<?= $this->form->field('urls', [
+					'type' => 'textarea',
+					'label' => $t('Links'),
+					'value' => $item->urls()
 				]) ?>
+				<div class="help">
+					<?= $t('Specify Links as URLs with leading protocol (i.e. `http://example.com`).') ?>
+					<?= $t('Separate multiple links with newlines so that each one has its own line.') ?>
+				</div>
 			</div>
-			<div class="grid-column-right"></div>
 		</div>
 
 		<div class="grid-row">
 			<div class="grid-column-left">
-				<?= $this->editor->field('description', [
-					'label' => $t('Description'),
-					'size' => 'gamma',
-					'features' => 'minimal'
+				<?= $this->media->field('cover_media_id', [
+					'label' => $t('Cover'),
+					'attachment' => 'direct',
+					'value' => $item->cover()
 				]) ?>
 			</div>
-			<div class="grid-column-right"></div>
+			<div class="grid-column-right">
+				<?= $this->media->field('media', [
+					'label' => $t('Media'),
+					'attachment' => 'joined',
+					'value' => $item->media()
+				]) ?>
+			</div>
+		</div>
+
+		<div class="grid-row">
+			<?= $this->editor->field('body', [
+				'label' => $t('Content'),
+				'size' => 'beta',
+				'features' => 'full'
+			]) ?>
 		</div>
 
 		<div class="bottom-actions">

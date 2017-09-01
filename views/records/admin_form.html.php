@@ -64,6 +64,7 @@ $this->set([
 				]) ?>
 			</div>
 		</div>
+
 		<div class="grid-row">
 			<div class="grid-column-left">
 				<?= $this->media->field('cover_media_id', [
@@ -82,14 +83,11 @@ $this->set([
 		</div>
 
 		<div class="grid-row">
-			<div class="grid-column-left">
-				<?= $this->editor->field('description', [
-					'label' => $t('Description'),
-					'size' => 'gamma',
-					'features' => 'minimal'
-				]) ?>
-			</div>
-			<div class="grid-column-right"></div>
+			<?= $this->editor->field('body', [
+				'label' => $t('Content'),
+				'size' => 'beta',
+				'features' => 'full'
+			]) ?>
 		</div>
 
 		<div class="grid-row">

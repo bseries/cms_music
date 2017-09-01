@@ -12,7 +12,7 @@ $this->set([
 		'type' => 'single',
 		'title' => $item->name,
 		'empty' => $t('unnamed'),
-		'object' => $t('recor label')
+		'object' => $t('record label')
 	],
 	'meta' => [
 		'is_published' => $item->is_published ? $t('published') : $t('unpublished')
@@ -34,26 +34,30 @@ $this->set([
 				) ?>
 			</div>
 		</div>
-		<div class="grid-row">
-			<div class="grid-column-left">
-				<?= $this->media->field('logo_media_id', [
-					'label' => $t('Logo'),
-					'attachment' => 'direct',
-					'value' => $item->logo()
-				]) ?>
-			</div>
-			<div class="grid-column-right"></div>
-		</div>
 
 		<div class="grid-row">
 			<div class="grid-column-left">
-				<?= $this->editor->field('description', [
-					'label' => $t('Description'),
-					'size' => 'gamma',
-					'features' => 'minimal'
+				<?= $this->media->field('cover_media_id', [
+					'label' => $t('Cover'),
+					'attachment' => 'direct',
+					'value' => $item->cover()
 				]) ?>
 			</div>
-			<div class="grid-column-right"></div>
+			<div class="grid-column-right">
+				<?= $this->media->field('media', [
+					'label' => $t('Media'),
+					'attachment' => 'joined',
+					'value' => $item->media()
+				]) ?>
+			</div>
+		</div>
+
+		<div class="grid-row">
+			<?= $this->editor->field('body', [
+				'label' => $t('Content'),
+				'size' => 'beta',
+				'features' => 'full'
+			]) ?>
 		</div>
 
 		<div class="bottom-actions">

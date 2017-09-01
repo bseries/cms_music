@@ -1,10 +1,10 @@
 -- Create syntax for TABLE 'musicians'
 CREATE TABLE `musicians` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `logo_media_id` int(11) DEFAULT NULL,
+  `cover_media_id` int(11) DEFAULT NULL,
   `name` varchar(250) NOT NULL DEFAULT '',
-  `description` text,
-  `url` varchar(250) DEFAULT NULL,
+  `body` text,
+  `urls` text,
   `is_published` tinyint(1) DEFAULT '0',
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
@@ -16,9 +16,9 @@ CREATE TABLE `musicians` (
 -- Create syntax for TABLE 'record_labels'
 CREATE TABLE `record_labels` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `logo_media_id` int(11) DEFAULT NULL,
+  `cover_media_id` int(11) DEFAULT NULL,
   `name` varchar(250) NOT NULL DEFAULT '',
-  `description` text,
+  `body` text,
   `url` varchar(250) DEFAULT NULL,
   `is_published` tinyint(1) DEFAULT '0',
   `created` datetime NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `records` (
   `musician_id` int(11) unsigned NOT NULL,
   `cover_media_id` int(11) DEFAULT NULL,
   `title` varchar(250) NOT NULL DEFAULT '',
-  `description` text NOT NULL,
+  `body` text NOT NULL,
   `tracklist` text,
   `is_published` tinyint(1) DEFAULT '0',
   `formats` varchar(250) DEFAULT NULL,
