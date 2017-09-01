@@ -27,11 +27,15 @@ $this->set([
 				<?= $this->form->field('name', ['type' => 'text', 'label' => $t('Name'), 'class' => 'use-for-title']) ?>
 			</div>
 			<div class="grid-column-right">
-				<?= $this->form->field('url', [
-					'type' => 'text',
-					'label' => $t('Link'),
-					'placeholder' => $t('https://foo.com/bar or /bar')]
-				) ?>
+				<?= $this->form->field('urls', [
+					'type' => 'textarea',
+					'label' => $t('Links'),
+					'value' => $item->urls()
+				]) ?>
+				<div class="help">
+					<?= $t('Specify Links as URLs with leading protocol (i.e. `http://example.com`).') ?>
+					<?= $t('Separate multiple links with newlines so that each one has its own line.') ?>
+				</div>
 			</div>
 		</div>
 
