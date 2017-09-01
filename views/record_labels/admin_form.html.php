@@ -12,7 +12,7 @@ $this->set([
 		'type' => 'single',
 		'title' => $item->name,
 		'empty' => $t('unnamed'),
-		'object' => $t('recor label')
+		'object' => $t('record label')
 	],
 	'meta' => [
 		'is_published' => $item->is_published ? $t('published') : $t('unpublished')
