@@ -46,7 +46,7 @@ $this->set([
 		</div>
 
 		<div class="grid-row">
-			<?= $this->editor->field('description', [
+			<?= $this->editor->field('body', [
 				'label' => $t('Content'),
 				'size' => 'beta',
 				'features' => 'full'
