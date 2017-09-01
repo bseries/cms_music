@@ -64,6 +64,7 @@ $this->set([
 				]) ?>
 			</div>
 		</div>
+
 		<div class="grid-row">
 			<div class="grid-column-left">
 				<?= $this->media->field('cover_media_id', [
