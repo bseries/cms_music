@@ -54,6 +54,10 @@ class Records extends \base_core\models\Base {
 				'media' => [
 					'type' => 'joined',
 					'to' => 'base_media\models\MediaAttachments'
+				],
+				'bodyMedia' => [
+					'type' => 'inline',
+					'to' => 'body'
 				]
 			]
 		],
