@@ -17,15 +17,19 @@
 
 namespace cms_music\config;
 
-use lithium\g11n\Message;
 use base_core\extensions\cms\Widgets;
+use cms_music\models\Musicians;
+use cms_music\models\RecordLabels;
 use cms_music\models\Records;
+use lithium\g11n\Message;
 
 extract(Message::aliases());
 
 Widgets::register('authoring',  function() use ($t) {
 	return [
 		'data' => [
+			$t('Musicians', ['scope' => 'cms_music']) => Musicians::find('count'),
+			$t('Record Labels', ['scope' => 'cms_music']) => RecordLabels::find('count'),
 			$t('Records', ['scope' => 'cms_music']) => Records::find('count')
 		]
 	];
