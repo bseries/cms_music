@@ -1,5 +1,5 @@
 {
-    "name": "atelierdisko/cms_music",
+    "name": "bseries/cms_music",
     "description": "Music functionality for Bureau.",
     "homepage": "http://atelierdisko.de",
     "type": "lithium-library",
@@ -12,9 +12,9 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "atelierdisko/base_core": "1.4.*",
-        "atelierdisko/base_media": "1.4.*",
-        "atelierdisko/cms_core": "1.4.*",
+        "bseries/base_core": "1.4.*",
+        "bseries/base_media": "1.4.*",
+        "bseries/cms_core": "1.4.*",
         "unionofrad/lithium": "1.0.*@dev",
         "composer/installers": "1.*@stable"
     },
