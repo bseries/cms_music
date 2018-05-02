@@ -68,7 +68,7 @@ class Musicians extends \base_core\models\Base {
 	];
 
 	public static function init() {
-		$model = static::_object();
+		$model = static::object();
 		extract(Message::aliases());
 
 		$model->validates['name'] = [
