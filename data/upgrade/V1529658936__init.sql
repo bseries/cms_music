@@ -11,7 +11,7 @@ CREATE TABLE `musicians` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `is_published` (`is_published`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB;
 
 -- Create syntax for TABLE 'record_labels'
 CREATE TABLE `record_labels` (
@@ -26,7 +26,7 @@ CREATE TABLE `record_labels` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `is_published` (`is_published`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB;
 
 -- Create syntax for TABLE 'record_labels_records'
 CREATE TABLE `record_labels_records` (
@@ -35,7 +35,7 @@ CREATE TABLE `record_labels_records` (
   `record_id` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `record_label_id` (`record_label_id`,`record_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB;
 
 -- Create syntax for TABLE 'records'
 CREATE TABLE `records` (
@@ -54,4 +54,4 @@ CREATE TABLE `records` (
   KEY `is_published` (`is_published`),
   KEY `musician_id` (`musician_id`),
   KEY `published` (`published`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB;
