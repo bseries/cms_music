@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cms_music 1.0\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2015-04-13 13:31+0200\n"
-"PO-Revision-Date: 2015-04-13 13:31+0200\n"
+"POT-Creation-Date: 2018-07-12 12:51+0200\n"
+"PO-Revision-Date: 2018-07-12 12:59+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -16,153 +16,202 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.12\n"
 
-#: config/panes.php:19
+#: config/panes.php:17 config/widgets.php:22
 msgid "Musicians"
-msgstr ""
+msgstr "Musiker"
 
-#: config/panes.php:24 config/widgets.php:22
+#: config/panes.php:22 config/widgets.php:23
+msgid "Record Labels"
+msgstr "Plattenlabel"
+
+#: config/panes.php:27 config/widgets.php:24
 msgid "Records"
-msgstr ""
+msgstr "Alben"
 
-#: models/Musicians.php:60 models/Records.php:61
-msgid "This field cannot be left blank."
-msgstr ""
+#: models/Musicians.php:69 models/RecordLabels.php:68 models/Records.php:79
+msgid "This field cannot be empty."
+msgstr "Dieses Feld darf nicht leer sein."
 
-#: views/posts/admin_form.html.php:15
-msgid "untitled"
-msgstr ""
+#: views/musicians/admin_form.html.php:14
+#: views/record_labels/admin_form.html.php:14
+msgid "unnamed"
+msgstr "unbenannt"
 
-#: views/posts/admin_form.html.php:16
-msgid "post"
-msgstr ""
+#: views/musicians/admin_form.html.php:15
+#: views/musicians/admin_index.html.php:30
+msgid "musician"
+msgstr "Musiker"
 
-#: views/posts/admin_form.html.php:19
+#: views/musicians/admin_form.html.php:18
+#: views/record_labels/admin_form.html.php:18
+#: views/records/admin_form.html.php:18
 msgid "published"
-msgstr ""
+msgstr "publiziert"
 
-#: views/posts/admin_form.html.php:19
+#: views/musicians/admin_form.html.php:18
+#: views/record_labels/admin_form.html.php:18
+#: views/records/admin_form.html.php:18
 msgid "unpublished"
-msgstr ""
+msgstr "unpubliziert"
 
-#: views/posts/admin_form.html.php:20
-msgid "promoted"
-msgstr ""
+#: views/musicians/admin_form.html.php:27
+#: views/musicians/admin_index.html.php:39
+#: views/record_labels/admin_form.html.php:27
+#: views/record_labels/admin_index.html.php:39
+msgid "Name"
+msgstr "Name"
 
-#: views/posts/admin_form.html.php:20
-msgid "unpromoted"
-msgstr ""
+#: views/musicians/admin_form.html.php:32
+msgid "Links"
+msgstr "Links"
 
-#: views/posts/admin_form.html.php:31 views/posts/admin_index.html.php:42
-msgid "Title"
-msgstr ""
+#: views/musicians/admin_form.html.php:36
+msgid "Specify Links as URLs with leading protocol (i.e. `http://example.com`)."
+msgstr "Links müssen mit führenden Protokoll angegeben werden (z.B. `http://example.de`)."
 
-#: views/posts/admin_form.html.php:34
-msgid "Author/s"
-msgstr ""
+#: views/musicians/admin_form.html.php:37
+msgid "Separate multiple links with newlines so that each one has its own line."
+msgstr "Für mehrere Links, geben Sie einen Link pro Zeile an."
 
-#: views/posts/admin_form.html.php:37
-msgid "Separate multiple authors with commas."
-msgstr ""
-
-#: views/posts/admin_form.html.php:42
-msgid "Publish date"
-msgstr ""
-
-#: views/posts/admin_form.html.php:45
-msgid ""
-"Setting a publish date allows to pre- or post-date this item. It is used for "
-"public display."
-msgstr ""
-
-#: views/posts/admin_form.html.php:47
-msgid "Tags"
-msgstr ""
-
-#: views/posts/admin_form.html.php:48
-msgid "Separate multiple tags with commas."
-msgstr ""
-
-#: views/posts/admin_form.html.php:52
-msgid "Source"
-msgstr ""
-
-#: views/posts/admin_form.html.php:59
+#: views/musicians/admin_form.html.php:45
+#: views/record_labels/admin_form.html.php:41
+#: views/records/admin_form.html.php:71
 msgid "Cover"
-msgstr ""
+msgstr "Cover"
 
-#: views/posts/admin_form.html.php:62 views/posts/admin_form.html.php:73
-msgid "select"
-msgstr ""
-
-#: views/posts/admin_form.html.php:67
+#: views/musicians/admin_form.html.php:52
+#: views/record_labels/admin_form.html.php:48
+#: views/records/admin_form.html.php:78
 msgid "Media"
-msgstr ""
+msgstr "Medien"
 
-#: views/posts/admin_form.html.php:82
-msgid "Teaser"
-msgstr ""
-
-#: views/posts/admin_form.html.php:94
+#: views/musicians/admin_form.html.php:61
+#: views/record_labels/admin_form.html.php:57
+#: views/records/admin_form.html.php:87
 msgid "Content"
-msgstr ""
+msgstr "Inhalt"
 
-#: views/posts/admin_form.html.php:101 views/posts/admin_index.html.php:81
-msgid "promote"
-msgstr ""
-
-#: views/posts/admin_form.html.php:101 views/posts/admin_index.html.php:81
-msgid "unpromote"
-msgstr ""
-
-#: views/posts/admin_form.html.php:104 views/posts/admin_index.html.php:83
-msgid "publish"
-msgstr ""
-
-#: views/posts/admin_form.html.php:104 views/posts/admin_index.html.php:83
-msgid "unpublish"
-msgstr ""
-
-#: views/posts/admin_form.html.php:106
-msgid "save"
-msgstr ""
-
-#: views/posts/admin_index.html.php:13
-msgid "posts"
-msgstr ""
-
-#: views/posts/admin_index.html.php:30
-msgid "new post"
-msgstr ""
-
-#: views/posts/admin_index.html.php:37
-msgid "publ.?"
-msgstr ""
-
-#: views/posts/admin_index.html.php:39
-msgid "prom.?"
-msgstr ""
-
-#: views/posts/admin_index.html.php:43
-msgid "Pubdate"
-msgstr ""
-
-#: views/posts/admin_index.html.php:44
-msgid "Modified"
-msgstr ""
-
-#: views/posts/admin_index.html.php:49
-msgid "Filter"
-msgstr ""
-
-#: views/posts/admin_index.html.php:79
+#: views/musicians/admin_form.html.php:70
+#: views/record_labels/admin_form.html.php:66
+#: views/records/admin_form.html.php:104
 msgid "delete"
-msgstr ""
+msgstr "löschen"
 
-#: views/posts/admin_index.html.php:84
+#: views/musicians/admin_form.html.php:77
+#: views/musicians/admin_index.html.php:66
+#: views/record_labels/admin_form.html.php:73
+#: views/record_labels/admin_index.html.php:66
+#: views/records/admin_form.html.php:111 views/records/admin_index.html.php:73
+msgid "publish"
+msgstr "publizieren"
+
+#: views/musicians/admin_form.html.php:77
+#: views/musicians/admin_index.html.php:66
+#: views/record_labels/admin_form.html.php:73
+#: views/record_labels/admin_index.html.php:66
+#: views/records/admin_form.html.php:111 views/records/admin_index.html.php:73
+msgid "unpublish"
+msgstr "depublizieren"
+
+#: views/musicians/admin_form.html.php:79
+#: views/record_labels/admin_form.html.php:75
+#: views/records/admin_form.html.php:113
+msgid "save"
+msgstr "speichern"
+
+#: views/musicians/admin_index.html.php:13
+msgid "muscians"
+msgstr "Musiker"
+
+#: views/musicians/admin_index.html.php:37
+#: views/record_labels/admin_index.html.php:37
+#: views/records/admin_index.html.php:37
+msgid "publ.?"
+msgstr "publ.?"
+
+#: views/musicians/admin_index.html.php:40
+#: views/record_labels/admin_index.html.php:40
+#: views/records/admin_index.html.php:42
+msgid "Modified"
+msgstr "Bearbeitet"
+
+#: views/musicians/admin_index.html.php:45
+#: views/record_labels/admin_index.html.php:45
+#: views/records/admin_index.html.php:47
+msgid "Filter"
+msgstr "Filter"
+
+#: views/musicians/admin_index.html.php:67
+#: views/record_labels/admin_index.html.php:67
+#: views/records/admin_index.html.php:74
 msgid "open"
-msgstr ""
+msgstr "öffnen"
 
-#: views/posts/admin_index.html.php:89
+#: views/musicians/admin_index.html.php:72
+#: views/record_labels/admin_index.html.php:72
+#: views/records/admin_index.html.php:79
 msgid "No items available, yet."
-msgstr ""
+msgstr "Es sind noch keine Einträge verfügbar."
+
+#: views/record_labels/admin_form.html.php:15
+#: views/record_labels/admin_index.html.php:30
+msgid "record label"
+msgstr "Plattenlabel"
+
+#: views/record_labels/admin_form.html.php:32
+msgid "Link"
+msgstr "Link"
+
+#: views/record_labels/admin_form.html.php:33
+msgid "https://foo.com/bar or /bar"
+msgstr "https://foo.de/bar oder /bar"
+
+#: views/record_labels/admin_index.html.php:13
+msgid "record labels"
+msgstr "Plattenlabel"
+
+#: views/records/admin_form.html.php:14
+msgid "untitled"
+msgstr "ohne Titel"
+
+#: views/records/admin_form.html.php:15 views/records/admin_index.html.php:30
+msgid "record"
+msgstr "Album"
+
+#: views/records/admin_form.html.php:29 views/records/admin_index.html.php:39
+msgid "Musician"
+msgstr "Musiker"
+
+#: views/records/admin_form.html.php:32 views/records/admin_index.html.php:40
+msgid "Title"
+msgstr "Titel"
+
+#: views/records/admin_form.html.php:43
+msgid "Publish date"
+msgstr "Veröffentlichungsdatum"
+
+#: views/records/admin_form.html.php:48
+msgid "Format/s"
+msgstr "Format/e"
+
+#: views/records/admin_form.html.php:51
+msgid "Separate multiple formats with commas."
+msgstr "Trennen Sie mehrere Formate durch Kommas."
+
+#: views/records/admin_form.html.php:61
+msgid "Labels"
+msgstr "Label"
+
+#: views/records/admin_form.html.php:95
+msgid "Tracklist"
+msgstr "Trackliste"
+
+#: views/records/admin_index.html.php:13
+msgid "records"
+msgstr "Alben"
+
+#: views/records/admin_index.html.php:41
+msgid "Pubdate"
+msgstr "Veröffentlichungsdatum"

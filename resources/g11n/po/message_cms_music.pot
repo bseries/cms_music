@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Atelier Disko
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the cms_music package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cms_music 1.0\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2015-04-13 13:31+0200\n"
+"POT-Creation-Date: 2018-07-12 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,152 +17,202 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: config/panes.php:19
+#: config/panes.php:17 config/widgets.php:22
 msgid "Musicians"
 msgstr ""
 
-#: config/panes.php:24 config/widgets.php:22
+#: config/panes.php:22 config/widgets.php:23
+msgid "Record Labels"
+msgstr ""
+
+#: config/panes.php:27 config/widgets.php:24
 msgid "Records"
 msgstr ""
 
-#: models/Musicians.php:60 models/Records.php:61
-msgid "This field cannot be left blank."
+#: models/Musicians.php:69 models/RecordLabels.php:68 models/Records.php:79
+msgid "This field cannot be empty."
 msgstr ""
 
-#: views/posts/admin_form.html.php:15
-msgid "untitled"
+#: views/musicians/admin_form.html.php:14
+#: views/record_labels/admin_form.html.php:14
+msgid "unnamed"
 msgstr ""
 
-#: views/posts/admin_form.html.php:16
-msgid "post"
+#: views/musicians/admin_form.html.php:15
+#: views/musicians/admin_index.html.php:30
+msgid "musician"
 msgstr ""
 
-#: views/posts/admin_form.html.php:19
+#: views/musicians/admin_form.html.php:18
+#: views/record_labels/admin_form.html.php:18
+#: views/records/admin_form.html.php:18
 msgid "published"
 msgstr ""
 
-#: views/posts/admin_form.html.php:19
+#: views/musicians/admin_form.html.php:18
+#: views/record_labels/admin_form.html.php:18
+#: views/records/admin_form.html.php:18
 msgid "unpublished"
 msgstr ""
 
-#: views/posts/admin_form.html.php:20
-msgid "promoted"
+#: views/musicians/admin_form.html.php:27
+#: views/musicians/admin_index.html.php:39
+#: views/record_labels/admin_form.html.php:27
+#: views/record_labels/admin_index.html.php:39
+msgid "Name"
 msgstr ""
 
-#: views/posts/admin_form.html.php:20
-msgid "unpromoted"
+#: views/musicians/admin_form.html.php:32
+msgid "Links"
 msgstr ""
 
-#: views/posts/admin_form.html.php:31 views/posts/admin_index.html.php:42
-msgid "Title"
-msgstr ""
-
-#: views/posts/admin_form.html.php:34
-msgid "Author/s"
-msgstr ""
-
-#: views/posts/admin_form.html.php:37
-msgid "Separate multiple authors with commas."
-msgstr ""
-
-#: views/posts/admin_form.html.php:42
-msgid "Publish date"
-msgstr ""
-
-#: views/posts/admin_form.html.php:45
+#: views/musicians/admin_form.html.php:36
 msgid ""
-"Setting a publish date allows to pre- or post-date this item. It is used for "
-"public display."
+"Specify Links as URLs with leading protocol (i.e. `http://example.com`)."
 msgstr ""
 
-#: views/posts/admin_form.html.php:47
-msgid "Tags"
+#: views/musicians/admin_form.html.php:37
+msgid ""
+"Separate multiple links with newlines so that each one has its own line."
 msgstr ""
 
-#: views/posts/admin_form.html.php:48
-msgid "Separate multiple tags with commas."
-msgstr ""
-
-#: views/posts/admin_form.html.php:52
-msgid "Source"
-msgstr ""
-
-#: views/posts/admin_form.html.php:59
+#: views/musicians/admin_form.html.php:45
+#: views/record_labels/admin_form.html.php:41
+#: views/records/admin_form.html.php:71
 msgid "Cover"
 msgstr ""
 
-#: views/posts/admin_form.html.php:62 views/posts/admin_form.html.php:73
-msgid "select"
-msgstr ""
-
-#: views/posts/admin_form.html.php:67
+#: views/musicians/admin_form.html.php:52
+#: views/record_labels/admin_form.html.php:48
+#: views/records/admin_form.html.php:78
 msgid "Media"
 msgstr ""
 
-#: views/posts/admin_form.html.php:82
-msgid "Teaser"
-msgstr ""
-
-#: views/posts/admin_form.html.php:94
+#: views/musicians/admin_form.html.php:61
+#: views/record_labels/admin_form.html.php:57
+#: views/records/admin_form.html.php:87
 msgid "Content"
 msgstr ""
 
-#: views/posts/admin_form.html.php:101 views/posts/admin_index.html.php:81
-msgid "promote"
-msgstr ""
-
-#: views/posts/admin_form.html.php:101 views/posts/admin_index.html.php:81
-msgid "unpromote"
-msgstr ""
-
-#: views/posts/admin_form.html.php:104 views/posts/admin_index.html.php:83
-msgid "publish"
-msgstr ""
-
-#: views/posts/admin_form.html.php:104 views/posts/admin_index.html.php:83
-msgid "unpublish"
-msgstr ""
-
-#: views/posts/admin_form.html.php:106
-msgid "save"
-msgstr ""
-
-#: views/posts/admin_index.html.php:13
-msgid "posts"
-msgstr ""
-
-#: views/posts/admin_index.html.php:30
-msgid "new post"
-msgstr ""
-
-#: views/posts/admin_index.html.php:37
-msgid "publ.?"
-msgstr ""
-
-#: views/posts/admin_index.html.php:39
-msgid "prom.?"
-msgstr ""
-
-#: views/posts/admin_index.html.php:43
-msgid "Pubdate"
-msgstr ""
-
-#: views/posts/admin_index.html.php:44
-msgid "Modified"
-msgstr ""
-
-#: views/posts/admin_index.html.php:49
-msgid "Filter"
-msgstr ""
-
-#: views/posts/admin_index.html.php:79
+#: views/musicians/admin_form.html.php:70
+#: views/record_labels/admin_form.html.php:66
+#: views/records/admin_form.html.php:104
 msgid "delete"
 msgstr ""
 
-#: views/posts/admin_index.html.php:84
+#: views/musicians/admin_form.html.php:77
+#: views/musicians/admin_index.html.php:66
+#: views/record_labels/admin_form.html.php:73
+#: views/record_labels/admin_index.html.php:66
+#: views/records/admin_form.html.php:111 views/records/admin_index.html.php:73
+msgid "publish"
+msgstr ""
+
+#: views/musicians/admin_form.html.php:77
+#: views/musicians/admin_index.html.php:66
+#: views/record_labels/admin_form.html.php:73
+#: views/record_labels/admin_index.html.php:66
+#: views/records/admin_form.html.php:111 views/records/admin_index.html.php:73
+msgid "unpublish"
+msgstr ""
+
+#: views/musicians/admin_form.html.php:79
+#: views/record_labels/admin_form.html.php:75
+#: views/records/admin_form.html.php:113
+msgid "save"
+msgstr ""
+
+#: views/musicians/admin_index.html.php:13
+msgid "muscians"
+msgstr ""
+
+#: views/musicians/admin_index.html.php:37
+#: views/record_labels/admin_index.html.php:37
+#: views/records/admin_index.html.php:37
+msgid "publ.?"
+msgstr ""
+
+#: views/musicians/admin_index.html.php:40
+#: views/record_labels/admin_index.html.php:40
+#: views/records/admin_index.html.php:42
+msgid "Modified"
+msgstr ""
+
+#: views/musicians/admin_index.html.php:45
+#: views/record_labels/admin_index.html.php:45
+#: views/records/admin_index.html.php:47
+msgid "Filter"
+msgstr ""
+
+#: views/musicians/admin_index.html.php:67
+#: views/record_labels/admin_index.html.php:67
+#: views/records/admin_index.html.php:74
 msgid "open"
 msgstr ""
 
-#: views/posts/admin_index.html.php:89
+#: views/musicians/admin_index.html.php:72
+#: views/record_labels/admin_index.html.php:72
+#: views/records/admin_index.html.php:79
 msgid "No items available, yet."
+msgstr ""
+
+#: views/record_labels/admin_form.html.php:15
+#: views/record_labels/admin_index.html.php:30
+msgid "record label"
+msgstr ""
+
+#: views/record_labels/admin_form.html.php:32
+msgid "Link"
+msgstr ""
+
+#: views/record_labels/admin_form.html.php:33
+msgid "https://foo.com/bar or /bar"
+msgstr ""
+
+#: views/record_labels/admin_index.html.php:13
+msgid "record labels"
+msgstr ""
+
+#: views/records/admin_form.html.php:14
+msgid "untitled"
+msgstr ""
+
+#: views/records/admin_form.html.php:15 views/records/admin_index.html.php:30
+msgid "record"
+msgstr ""
+
+#: views/records/admin_form.html.php:29 views/records/admin_index.html.php:39
+msgid "Musician"
+msgstr ""
+
+#: views/records/admin_form.html.php:32 views/records/admin_index.html.php:40
+msgid "Title"
+msgstr ""
+
+#: views/records/admin_form.html.php:43
+msgid "Publish date"
+msgstr ""
+
+#: views/records/admin_form.html.php:48
+msgid "Format/s"
+msgstr ""
+
+#: views/records/admin_form.html.php:51
+msgid "Separate multiple formats with commas."
+msgstr ""
+
+#: views/records/admin_form.html.php:61
+msgid "Labels"
+msgstr ""
+
+#: views/records/admin_form.html.php:95
+msgid "Tracklist"
+msgstr ""
+
+#: views/records/admin_index.html.php:13
+msgid "records"
+msgstr ""
+
+#: views/records/admin_index.html.php:41
+msgid "Pubdate"
 msgstr ""
